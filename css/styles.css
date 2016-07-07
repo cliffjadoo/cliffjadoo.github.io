@@ -1,0 +1,251 @@
+/*Box hack*/
+
+*{
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+
+}
+
+
+/*base styles + fonts*/
+
+body {
+	font-family: "Work Sans", serif;
+	font-size:16px;
+	font-weight: 350;
+	background-color: #e5ebee;
+}
+
+body, html {
+	height:100%;
+	background-color: #e5ebee;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*Layout*/
+
+
+
+
+.container {
+	width:100%;
+	margin: 0 auto;
+	padding-top: 3px;
+	padding-right: 5px;
+	margin-left: 5px;
+}
+
+#resume {
+	padding-bottom: 10px;
+}
+
+header {
+	overflow: hidden;
+	background-color: black;
+}
+
+header nav {
+	margin: 0 auto;	
+	clear:both;
+	text-align: center;
+	padding-bottom: 5px;
+	display:flex;
+	justify-content: space-around;
+}
+
+header nav ul li {
+	display:inline-block;
+	margin-right: 10px;
+}
+
+#aboutMe h2 {
+	text-align: center;
+}
+
+#resume h2, h3 {
+	text-align: center;
+}
+
+.date {
+	float:right;
+	display:inline-block;
+}
+
+.rockProject , .Relaxr {
+	float:left;
+	display:inline-block;
+	width:50%;
+	text-align:center;
+}
+
+.job {
+	float:left;
+	font-weight: 800;
+}
+
+.date {
+	float:right;
+	font-weight: 800;
+}
+
+.clearR {
+	clear:both;
+}
+
+.jobRole {
+	float:left;
+	clear:both;
+	margin-top: -10px;
+	font-weight: 800;
+}
+
+.hobbiesFloat1 , .hobbiesFloat2 , .hobbiesFloat3 {
+	float:left;
+	width:33.33333%;
+	text-align: center;
+	margin-top:-20px;
+	cursor: crosshair;
+}
+
+.clearHobbies {
+	clear:both;
+}
+
+.bulletP2 , .bulletP1 , .bulletP3 {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer {
+	border-top: 1px solid;
+}
+
+
+footer, .copyright {
+	text-align: center;
+	clear:both;
+	background-color: black;
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+
+.copyright {
+	color:white;
+}
+
+footer ul li {
+	display:inline-block;
+	list-style: none;
+	clear:both;
+}
+
+nav ul a {
+	color:white;
+}
+
+.Relaxr, .rockProject {
+	background-color: #e5ebee;
+	width:100%;
+	
+}
+
+
+
+#aboutMe, .container1 {
+	background-color: #ff0381;
+	margin-top: -20px;
+}
+
+
+.pinkBackground, .hobbiesFloat1 , .hobbiesFloat2 , .hobbiesFloat3  {
+	background-color: #ff0381;
+}
+
+.expandResume2 {
+	cursor: crosshair;
+}
+
+#aboutMe {
+	background-image: url("../images/download.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	height:300px;
+	color:white;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.highlighted {
+	background-color: #ff0381;
+}
+
+.rockProject {
+	float:left;
+	width:50%;
+}
+
+.Relaxr {
+	float:right;
+	width:50%;
+}
+
+.stickyFooter {
+	margin-bottom: -100px;
+	min-height: 92%;
+}
+
+.stickyFooter:after {
+	display:block;
+	content: "";
+}
+
+
+/*Responsive design for 480px and below*/
+
+@media screen and (max-width: 510px) {
+	body {
+		font-size: 12px;
+		width:100%;
+	}
+
+	.container {
+		padding: 0 10px 0 10px;
+	}
+
+
+	.navBar nav li {
+		display:block;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+
+	.rockProject, .Relaxr {
+		display:block;
+		clear:both;
+		width:100%;
+	}
+
+
+
+
+}
+
+

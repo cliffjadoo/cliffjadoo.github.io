@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Parchment, Stone, or Blade?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+      <p class="floatL"><a href="../../index.html">Return to Home</a></p>
+      <p class="floatR"><a href="../../classp.html">Return to Portfolio</a></p>
+    <h1 class="clearB">Rock, Paper, or Scissors?</h1>
+
+    <p>
+      A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.
+    </p>
+
+    <div class="scoreboard">
+      <h2>Scoreboard</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td id="humanScore">0</td>
+            <td id="computerScore">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>You</th>
+            <th>Bot</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <h2>Choose Wisely</h2>
+
+    <div class="flexB">
+      <button id="rock">Rock</button>
+
+      <button id="paper">Paper</button>
+
+      <button id="scissors">Scissors</button>
+    </div>
+
+    <div id="status"></div>
+    
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
