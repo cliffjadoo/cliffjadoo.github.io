@@ -26,7 +26,6 @@ $(function(){
 		$(".bulletP3").slideToggle(400);
 	};
 
-
 	$(".expandResume").hide()
 
 	$(".expandResume2").click(expandResumeFull1);
@@ -39,4 +38,11 @@ $(function(){
 		$(".navBarClick > li.highlighted").removeClass("highlighted");
 		$(this).addClass("highlighted");
 	});
+
+	$("#responsiveDesign").click(function(){
+		$(this).parent().toggleClass("slideDown")
+	});
+
+
+
 });
