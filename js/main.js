@@ -39,7 +39,7 @@ $(function(){
 		$(this).addClass("highlighted");
 	});
 
-	$("#responsiveDesign").click(function(){
+	$(".responsiveDesign").click(function(){
 		$(this).parent().toggleClass("slideDown")
 	});
 
